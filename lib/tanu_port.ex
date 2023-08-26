@@ -4,7 +4,6 @@ defmodule TanuPort do
   指定したネットワーク内のホストのアドレスを検出
   """
   def ip_sweep(network_ip) do
-    IO.inspect self()
     sweeper(self(), network_ip)
 
     receive do
